@@ -1,0 +1,33 @@
+/* For google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+
+
+/* Colors */
+:root {
+    --primary: #29e9bc;
+    --normal: #ffffff;
+    --black: #13131a;
+    --bg: #0c1013;
+    --danger: #f75842;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+}
+
+/* Universal selector  */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline-offset: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    transition: all 0.5s linear;
+    scroll-behavior: smooth;
+}
