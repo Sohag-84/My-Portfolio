@@ -95,37 +95,91 @@ h4 {
 
 /* for anchor tag */
 a {
-    color: var(--normal);
+  color: var(--normal);
 }
 
 /* for all image */
 img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 /* for button style */
 .btn {
-    display: inline-block;
-    background-color: var(--primary);
-    color: var(--black);
-    padding: 0.5rem 2rem;
-    border: 1px solid transparent;
-    border-radius: 0.3rem;
-    font-weight: 500;
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--black);
+  padding: 0.5rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  font-weight: 500;
 }
 .btn:hover {
-    color: var(--primary);
-    background-color: transparent;
-    border-color: var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+  border-color: var(--primary);
 }
 
 /* for bottom border */
 .border_bottom {
-    text-align: center;
-    display: inline-block;
-    border-bottom: 2px solid var(--primary);
-    color: var(--primary);
-    margin-bottom: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+  margin-bottom: 2.5rem;
+}
+
+/* for nav section */
+nav {
+  background-color: var(--black);
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav_container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_container span {
+  color: var(--primary);
+}
+/* for logo name size */
+.nav_container h4 {
+  font-size: 1.8rem;
+}
+
+/* for logo name hover */
+.nav_container h4:hover {
+  color: var(--primary);
+  transform: rotateX(360deg);
+  transition-duration: 1.2s;
+}
+
+/* remove nav section two icon from desktop screen */
+nav button {
+  display: none;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav_menu a {
+  font-size: 1rem;
+}
+
+.nav_menu a:hover {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.8rem;
+  background-color: var(--black);
 }
