@@ -120,3 +120,12 @@ img {
     background-color: transparent;
     border-color: var(--primary);
 }
+
+/* for bottom border */
+.border_bottom {
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid var(--primary);
+    color: var(--primary);
+    margin-bottom: 2.5rem;
+}
