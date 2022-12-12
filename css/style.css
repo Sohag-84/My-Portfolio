@@ -183,3 +183,54 @@ nav button {
   padding-bottom: 0.8rem;
   background-color: var(--black);
 }
+
+/* ====== Header section style ====== */
+header{
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: var(--black);
+}
+.header_container{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header_right{
+  flex: 1;
+}
+.header_left{
+  flex: 1;
+}
+.header_right .text-1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.header_right .text-2 {
+    font-size: 2.6rem;
+    font-weight: 550;
+}
+
+.header_right .text-3 {
+    font-size: 2rem;
+    margin: 0.3rem 0;
+}
+/* for bottom angle line */
+header::before {
+    content: "";
+    position: absolute;
+    background-color: var(--bg);
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    margin-bottom: -3.1rem;
+    z-index: 99;
+    transform: skewY(-2deg);
+    transform-origin: left;
+}
+.header_right .typing {
+    color: var(--primary);
+    font-weight: 500;
+}
