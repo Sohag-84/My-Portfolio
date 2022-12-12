@@ -31,3 +31,20 @@
     transition: all 0.5s linear;
     scroll-behavior: smooth;
 }
+
+/* Custom Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--normal);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--danger);
+}
