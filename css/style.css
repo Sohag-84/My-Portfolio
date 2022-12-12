@@ -1,50 +1,122 @@
 /* For google font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap");
 
 /* Colors */
 :root {
-    --primary: #29e9bc;
-    --normal: #ffffff;
-    --black: #13131a;
-    --bg: #0c1013;
-    --danger: #f75842;
-    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --primary: #29e9bc;
+  --normal: #ffffff;
+  --black: #13131a;
+  --bg: #0c1013;
+  --danger: #f75842;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
 
-
-    --container-width-lg: 80%;
-    --container-width-md: 90%;
-    --container-width-sm: 94%;
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
 }
 
 /* Universal selector  */
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    outline-offset: none;
-    border: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    text-transform: capitalize;
-    list-style: none;
-    transition: all 0.5s linear;
-    scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline-offset: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style: none;
+  transition: all 0.5s linear;
+  scroll-behavior: smooth;
 }
 
 /* Custom Scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--normal);
+  background: var(--normal);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--black);
+  background: var(--black);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--danger);
+  background: var(--danger);
+}
+
+/* for body style */
+body {
+  line-height: 1.7;
+  color: var(--normal); /* font color */
+  background-color: var(--bg);
+}
+
+/* container size */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* for all h tag line height */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+/* for anchor tag */
+a {
+    color: var(--normal);
+}
+
+/* for all image */
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* for button style */
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--black);
+    padding: 0.5rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    font-weight: 500;
+}
+.btn:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
 }
