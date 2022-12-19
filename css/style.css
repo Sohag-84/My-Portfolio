@@ -234,3 +234,51 @@ header::before {
     color: var(--primary);
     font-weight: 500;
 }
+
+/* ======ABOUT ME======= */
+
+.about {
+    text-align: center;
+}
+
+.about_container {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.about_container .about-img {
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+    margin-right: 2rem;
+    position: relative;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about_container .about-text {
+    max-width: 70%;
+    text-align: justify;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 2.5rem;
+}
+
+.about_container .about-text p {
+    margin-bottom: 0.8rem;
+}
+
+.about_container .about-text .text {
+    margin-bottom: 1rem;
+}
+
+.about_container .about-text .text span {
+    color: var(--primary);
+    font-weight: 500;
+}
