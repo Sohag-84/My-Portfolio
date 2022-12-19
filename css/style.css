@@ -185,100 +185,179 @@ nav button {
 }
 
 /* ====== Header section style ====== */
-header{
+header {
   position: relative;
   top: 5rem;
   overflow: hidden;
   margin-bottom: 2rem;
   background-color: var(--black);
 }
-.header_container{
+.header_container {
   position: relative;
   display: flex;
   align-items: center;
 }
-.header_right{
+.header_right {
   flex: 1;
 }
-.header_left{
+.header_left {
   flex: 1;
 }
 .header_right .text-1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .header_right .text-2 {
-    font-size: 2.6rem;
-    font-weight: 550;
+  font-size: 2.6rem;
+  font-weight: 550;
 }
 
 .header_right .text-3 {
-    font-size: 2rem;
-    margin: 0.3rem 0;
+  font-size: 2rem;
+  margin: 0.3rem 0;
 }
 /* for bottom angle line */
 header::before {
-    content: "";
-    position: absolute;
-    background-color: var(--bg);
-    width: 100%;
-    height: 5rem;
-    bottom: 0;
-    margin-bottom: -3.1rem;
-    z-index: 99;
-    transform: skewY(-2deg);
-    transform-origin: left;
+  content: "";
+  position: absolute;
+  background-color: var(--bg);
+  width: 100%;
+  height: 5rem;
+  bottom: 0;
+  margin-bottom: -3.1rem;
+  z-index: 99;
+  transform: skewY(-2deg);
+  transform-origin: left;
 }
 .header_right .typing {
-    color: var(--primary);
-    font-weight: 500;
+  color: var(--primary);
+  font-weight: 500;
 }
 
 /* ======ABOUT ME======= */
 
 .about {
-    text-align: center;
+  text-align: center;
 }
 
 .about_container {
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 2.5rem;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 2.5rem;
 }
 
 .about_container .about-img {
-    border: 3px solid var(--primary);
-    border-radius: 50%;
-    overflow: hidden;
-    max-width: 12.5rem;
-    max-height: 12.5rem;
-    margin-right: 2rem;
-    position: relative;
-    align-items: center;
-    margin-bottom: 2rem;
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 12.5rem;
+  max-height: 12.5rem;
+  margin-right: 2rem;
+  position: relative;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .about_container .about-text {
-    max-width: 70%;
-    text-align: justify;
-    line-height: 1.5rem;
-    letter-spacing: 0.5px;
-    padding-bottom: 2.5rem;
+  max-width: 70%;
+  text-align: justify;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 2.5rem;
 }
 
 .about_container .about-text p {
-    margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .about_container .about-text .text {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about_container .about-text .text span {
-    color: var(--primary);
-    font-weight: 500;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* ======SERVICES======= */
+.services {
+  text-align: center;
+  margin-top: -5rem;
+}
+
+.services_container .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.services_container .cards .card {
+  background-color: var(--primary);
+  padding: 1.5rem 1rem;
+  margin: 0 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.sbox i {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  color: var(--bg);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 14px;
+  transition: all 1s;
+}
+
+.sbox h3 {
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+.sbox p {
+  margin: 1.2rem 0;
+  color: var(--bg);
+}
+
+.sbox a {
+  color: var(--normal);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.3rem 1rem;
+  background-color: var(--bg);
+  border-radius: 1rem;
+}
+
+.sbox a:hover {
+  background-color: var(--normal);
+  color: var(--bg);
+  border: 1px solid var(--bg);
+}
+
+.services_container .cards .card:hover .sbox i {
+  background-color: var(--bg);
+  color: var(--normal);
+}
+
+.services_container .cards .card::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: var(--normal);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.services_container .cards .card:hover::after {
+  transform: rotate(13deg);
 }
