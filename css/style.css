@@ -514,3 +514,34 @@ header::before {
 .progress-line.css span::after {
   content: "50%";
 }
+
+/* =======PORTFOLIO======= */
+
+.portfolio_container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: var(--black);
+  border-radius: 2rem;
+}
+
+.gallery a {
+  height: 15rem;
+  width: 20rem;
+  margin: 1.2rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0 3px 5px var(--primary);
+}
+
+.gallery a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
