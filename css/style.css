@@ -545,3 +545,7 @@ header::before {
   height: 100%;
   object-fit: cover;
 }
+
+.gallery a img:hover {
+  transform: scale(1.4);
+}
