@@ -520,6 +520,7 @@ header::before {
 .portfolio_container {
   text-align: center;
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .gallery {
@@ -548,4 +549,52 @@ header::before {
 
 .gallery a img:hover {
   transform: scale(1.4);
+}
+
+/* ======Footer SECTION======= */
+footer {
+  padding-top: 5rem;
+  background-color: var(--black);
+  font-size: 0.9rem;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.footer_container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer_1 p {
+  margin: 0 0 2rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.footer_4 .mail {
+  text-transform: lowercase;
+}
+
+.footer_social {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer_copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--normal);
 }
