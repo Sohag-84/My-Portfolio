@@ -9,7 +9,6 @@
   --bg: #0c1013;
   --danger: #f75842;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
-
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
@@ -24,7 +23,6 @@
   border: none;
   box-sizing: border-box;
   text-decoration: none;
-  text-transform: capitalize;
   list-style: none;
   transition: all 0.5s linear;
   scroll-behavior: smooth;
