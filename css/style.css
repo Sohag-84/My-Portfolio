@@ -440,7 +440,7 @@ header::before {
 }
 
 .bar .progress-line.flutter span {
-  width: 70%;
+  width: 80%;
 }
 
 .bar .progress-line.firebase span {
@@ -498,7 +498,7 @@ header::before {
   content: "80%";
 }
 .progress-line.flutter span::after {
-  content: "70%";
+  content: "80%";
 }
 
 .progress-line.firebase span::after {
